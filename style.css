@@ -3,10 +3,12 @@
     --light-color:#EEEEEE;
     --second-color: #00ADB5;
     --bg-color:#393E46;
+
 }
+
 body {
-    background: url('/image/') 100%/cover no-repeat;
-    background-color: black;
+    background: url(/image/background.JPG) no-repeat;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -16,8 +18,7 @@ color: var(--light-color);
 
 .logo{
     position: relative;
-    right: 5%;
-    
+    right: 5%;    
 }
 
 .nav-link {
@@ -41,7 +42,6 @@ color: var(--light-color);
     font-weight: 500;
     
 }
-
 .download:hover{
      color: var(--light-color);
 }
@@ -58,7 +58,6 @@ color: var(--light-color);
   width: 30%;
 }
 
-
 .vl {
     border-left: 6px solid var(--second-color);
     height: 192px;
@@ -68,15 +67,14 @@ color: var(--light-color);
     top: 40%;
 }
 
-
 .facebook {
     position: absolute;
     left: 94%;
     top: 73%; 
     font-size: 35px;
-    color: var(--bg-color);
-    
+    color: var(--bg-color);  
 }
+
 .insta {
     position: absolute;
     left: 94%;
@@ -95,21 +93,18 @@ color: var(--light-color);
 
  .fa-brands {
     background: white;
-    color: black;
-    
+    color: black; 
 }
 
 .hello{
     z-index: 1;
     position: relative;
     margin-top: 2%;
-
 }
+
 .myphoto{
-    margin-top: 44%;
-   
+    margin-top: 44%;  
 }
-
 
 .name h2{
 font-weight: 700;
@@ -128,7 +123,7 @@ color: white;
 .hr {
     width: 200px; 
     border-top: 6px solid var(--second-color);
-    }
+}
 
 .junior {
     font-size: 26px;
@@ -141,17 +136,16 @@ color: white;
 .quote{
     color: white;
     margin-top: 90px;
-    font-size: 15px;
-    
+    font-size: 15px;   
 }
 
 .quote-author{
     font-weight: 700;
 }
+
 .quote-text{
     margin-top: -1%;
-    font-style: oblique;
-    
+    font-style: oblique;   
 }
 
 .myphoto {
@@ -160,57 +154,8 @@ color: white;
     top: 8%;
 }
 
-@media (max-width: 576px) {
-    .hello {
-        width: 200px;
-        margin-top: 9px;
-        margin-bottom: 10px;
-    }
-    .logo {
-        
-        position:relative;
-        right: 24%;  
-     }
-     .navbar-toggler{
-        position:relative;
-        right: 7%;  
-     }
-     .name h2{
-        font-size: 35px;
-        line-height: 46px;
-            }
 
-
-        .junior {
-            font-size: 18px;
-            width: 80%;
-        
-        }
-
-        .hr {
-            width: 130px; 
-            }
-        
-            .quote{
-                font-size: 14px;
-                width: 59%;
-            }
-
-            .fa-brands {
-                display: flex;
-                justify-content: space-between                ;
-            }
-
-            .myphoto {
-                width: 150px;
-                position: relative;
-                margin-top: -130%;
-            }
-
-            .myphoto-about{
-                width: 200px;
-            }
-  }
+ 
 
  .info-me {
     color: white;
@@ -220,54 +165,159 @@ color: white;
 
  .portfolio-link{
     color: var(--second-color);
+    text-decoration: none;
  }
 
  .portfolio-link:hover{
     color: var(--light-color);
  }
-   
 
- 
-
-
-
-
-
-
- .hr-contact{
-    margin-top: 13%;
-    width: 100%; 
-    border-top: 230px solid var(--second-color);
+ .my-works{
+    text-align: center;
+    color: var(--light-color);
+    font-size: 55px;
+    line-height: 46px;
+    font-weight: 700;
  }
 
+ .border {
+    border-color: var(--second-color) ;
+ }
+   
+.hr-portfolio {
+    width: 90%; 
+    border-top: 6px solid var(--second-color);
+    display: block;
+    margin: auto;
+}
+
+.view{
+    color: var(--light-color);
+    font-size: 18px;
+    display: block;
+    margin: auto;
+}
+
+.button-view {   
+    border: 2px solid #393E46;
+    border-color: var(--bg-color);
+    background: var(--bg-color);
+    border-radius: 5px;
+    padding: 4px 18px 4px 18px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+    
+.button-view:hover{
+    background-color: var(--second-color);
+}
+
+
+@media (max-width: 576px) {
+        .hello {
+            width: 200px;
+            margin-top: 9px;
+            margin-bottom: 10px;
+        }
+        .logo {
+            
+            position:relative;
+            right: 24%;  
+         }
+         .nav-item {
+            padding: 0px;
+         }
+         .navbar-toggler{
+            position:relative;
+            right: 7%;  
+         }
+         .name h2{
+            font-size: 35px;
+            line-height: 46px;
+        }
+
+        .junior {
+            font-size: 18px;
+            width: 80%;
+        }
+    
+        .hr {
+            width: 130px; 
+        }
+            
+        .quote{
+            font-size: 14px;
+            width: 59%;
+        }
+    
+        .fa-brands {
+            display: flex;
+            justify-content: space-between                ;
+        }
+    
+        .myphoto {
+            display: none;
+        }
+    
+        .myphoto-about{
+            width: 200px;
+        }
+    
+        .info-me {
+            font-size: 16px !important;
+        }
+    
+        .col-contact{
+            position: relative;
+            width: 70%;
+            top: 20%;
+            left: 10% !important;  
+        }
+                    
+        .contact-me{
+            font-size: 27px !important;
+        }
+
+        .mail-call {
+            font-size: 20px !important;
+        }
+
+        .link-contact{
+            font-size: 14px !important;
+        }
+        
+        .my-works {
+            font-size: 25px !important;
+            line-height: 26px !important;
+        }
+}
+ 
 
  .image-contact{
     z-index: 1;
     position: relative;
     margin-top: -28%;
     margin-left: 21%;
-
 }
 
 .contact-me{
-width: 377px;
-padding-bottom: 20px;
-font-weight: 700;
-font-size: 54px;
-color: var(--light-color);
+    width: 377px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 54px;
+    color: var(--light-color);
 }
 
 .contact-me:hover{
     color: var(--second-color);
 }
 
-
-
 .mail-call{
     color: var(--second-color);
     font-weight: 600;
     height:22px;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .mail-call:hover{
@@ -280,23 +330,24 @@ color: var(--light-color);
     font-weight: 400;
     height: 22px;
     font-size: 15px;
-
 }
 
 .link-conract:visited {
     color: var(--second-color);
-    }
+}
 
-    .link-contact:hover{
-        color: var(--second-color) !important;
-    }
+.link-contact:hover{
+    color: var(--second-color) !important;
+}
 
 .col-contact{
     position: absolute;
-    width: 80%;
-    top: 50%;
-    left: 38%;
+    width: 90%;
+    top: 42%;
+    left: 41%;
     z-index: 1;
-    
-
 }
+
+
+
+
