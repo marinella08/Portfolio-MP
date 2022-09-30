@@ -6,6 +6,13 @@
 
 }
 
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+
 body {
     background: url(/image/background.JPG) no-repeat;
     font-family: 'Poppins', sans-serif;
@@ -253,7 +260,7 @@ color: white;
     
         .fa-brands {
             display: flex;
-            justify-content: space-between                ;
+            justify-content: space-between;
         }
     
         .myphoto {
@@ -347,6 +354,7 @@ color: white;
     left: 41%;
     z-index: 1;
 }
+
 
 
 
